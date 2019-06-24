@@ -5,13 +5,16 @@
   "dependencies": {
     "@types/jest": "24.0.15",
     "@types/node": "12.0.8",
-    "@types/react": "16.8.22",
     "@types/react-dom": "16.8.4",
+    "@types/styled-components": "^4.1.16",
+    "libphonenumber-js": "^1.7.20",
+    "moment": "^2.24.0",
     "npm": "^6.9.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
     "react-scripts": "3.0.1",
-    "styled-components": "^4.3.2",
+    "styled-components": "^5.0.0-beta.5",
     "typescript": "3.5.2"
   },
   "scripts": {
@@ -34,5 +37,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.22",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
   }
 }

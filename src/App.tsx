@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider } from "styled-components";
 
-const App: React.FC = () => {
+import "./App.css";
+import { PageHeader } from "./sections/PageHeader/PageHeader";
+import { defaultTheme, styled } from "./utils/theme";
+import { PageBody } from "./sections/PageBody/PageBody";
+
+const Resume = styled.div`
+  font-family: ${props => props.theme.bodyFont};
+  font-weight: 300;
+  font-size: 14px;
+`;
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <Resume className="resume">
+        <PageHeader />
+        <PageBody />
+      </Resume>
+    </ThemeProvider>
   );
 }
-
-export default App;
