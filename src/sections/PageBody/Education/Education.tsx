@@ -14,6 +14,7 @@ const SchoolGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
+    grid-row-gap: 1em;
 `
 
 const EducationContext = styled.div`
