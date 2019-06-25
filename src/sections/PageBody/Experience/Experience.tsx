@@ -21,6 +21,7 @@ export interface Job {
 const Stack = styled(Mono)`
     font-style: italic;
     color: ${props => props.theme.secondaryColor};
+    white-space: nowrap;
 `;
 
 const jobs: Job[] = [
@@ -64,7 +65,7 @@ const jobs: Job[] = [
         jobTitle: "Software Engineer",
         bullets: [
             <>Created Angular.js webapp that pulled data from a RESTful JSON service and presented the results in a user-friendly
-            and customizable format, resulting in a strong and competitive proposal for the company. <Stack>(Node.js, JS, AngularJS)</Stack></>,
+            and customizable format, resulting in a strong and competitive proposal for the company. <Stack>(Node.js, ES5, AngularJS)</Stack></>,
             <>Modified machine learning workflows to properly use Apache Spark features for more reliable and efficient distributed processing, increasing performance. <Stack>(Python, Spark)</Stack></>,
             <>Added an option to the machine learning job, both in the back-end and the frontend Angular web-app for launching and viewing the results of jobs. <Stack>(Python, Django, AngularJS)</Stack></>
         ]
