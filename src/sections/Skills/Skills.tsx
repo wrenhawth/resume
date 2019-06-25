@@ -6,7 +6,7 @@ import { styled } from "../../utils/theme";
 interface SkillsProps {
 }
 
-const SkillsList = styled.p`
+const SkillsList = styled.div`
     font-family: ${props => props.theme.headerFont}
 `;
 
@@ -20,8 +20,9 @@ export function Skills(props: SkillsProps): JSX.Element {
         <div>
             <SectionName><Icon type="construct"/> Skills</SectionName>
             <SkillsList>
-                <p><Level>Experienced</Level>: React, Typescript, Node.js, HTML, SCSS, MongoDB</p>
-                <p><Level>Working Knowledge</Level>: Python, SQL, Docker, Amazon SQS</p>
+                <p><Level>Experienced</Level>: React, TypeScript, Node.js, HTML, SCSS, MongoDB</p>
+                <p><Level>Working Knowledge</Level>: Python, SQL, Meteor, Docker, Express, Amazon SQS, Amazon Labmda</p>
+                <p><Level>Previous Experience</Level>: AngularJS, Express</p>
             </SkillsList>
         </div>
     );

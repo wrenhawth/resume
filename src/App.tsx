@@ -9,7 +9,7 @@ import { PageBody } from "./sections/PageBody/PageBody";
 const Resume = styled.div`
   font-family: ${props => props.theme.bodyFont};
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
 `;
 
 export function App() {

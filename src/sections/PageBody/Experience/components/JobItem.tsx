@@ -25,8 +25,8 @@ const Accomplishments = styled.ul`
 
 export function JobItem(props: JobItemProps): JSX.Element {
     const start = moment(props.job.startDate).format("MMM Y");
-    const bullets = props.job.bullets.map((b) =>
-        <li>{b}</li>
+    const bullets = props.job.bullets.map((b, i) =>
+        <li key={`bullet-${i}`}>{b}</li>
     );
     const end = props.job.endDate ? moment(props.job.endDate).format("MMM Y") : "Present"
     return (

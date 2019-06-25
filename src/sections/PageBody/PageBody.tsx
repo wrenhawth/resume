@@ -14,7 +14,7 @@ const BodyDiv = styled.div`
 
 const TwoColumns = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-column-gap: 1em;
 `
 
@@ -24,8 +24,8 @@ export function PageBody(props: PageBodyProps): JSX.Element {
         <BodyDiv>
             <Experience />
             <TwoColumns>
-                <Skills />
                 <Education />
+                <Skills />
             </TwoColumns>
         </BodyDiv>
     );

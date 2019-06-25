@@ -13,10 +13,16 @@ interface EducationProps {
 const SchoolGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
 `
 
+const EducationContext = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+`
 const EducationDescription = styled.p`
-    margin-top: .5em;
+    margin: 0;
     font-family: ${props => props.theme.bodyFont};
     font-style: italic;
 `;
@@ -25,7 +31,7 @@ export function Education(props: EducationProps): JSX.Element {
 
     return (
         <div>
-            <SectionName><Icon type="school"/> Education</SectionName>
+            <SectionName><Icon type="school" /> Education</SectionName>
             <SchoolGrid>
                 <div>
                     <SidebarHeader>Georgia Tech</SidebarHeader>
@@ -38,10 +44,10 @@ export function Education(props: EducationProps): JSX.Element {
                     <SidebarHeader>University of Maryland</SidebarHeader>
                     <DateRange>2010 - 2013</DateRange>
                 </div>
-                <div>
+                <EducationContext>
                     <ItemTitle>B.S. in Psychology</ItemTitle>
                     <EducationDescription>Minor in Computer Science</EducationDescription>
-                </div>
+                </EducationContext>
             </SchoolGrid>
         </div>
     );
