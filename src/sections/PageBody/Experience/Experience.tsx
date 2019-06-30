@@ -31,17 +31,23 @@ const jobs: Job[] = [
         jobTitle: "Software Enginner",
         bullets: [
             <>
-                Developed front-end software in React. Coordinated and maintained the component library, improving developer output
-                 and the consistency of the user experience. Provided guidance for other engineers to extend the library and
-                 best apply React features to optimize component performance.
-                 <Stack> (TypeScript, React, SCSS, MongoDB)</Stack>
+                Developed front-end application in React for managing and analyzing the results of surveys.
+                Coordinated and maintained the component library, improving developer output, component performance,
+                and the consistency of the user experience. <Stack> (TypeScript, React, SCSS, MongoDB)</Stack>
             </>,
             <>
-                Developed large-scale back end software. Wrote back-end web-application software to process millions of AWS SQS events each month.
+                Wrote documentation on code standards for component design to maintain this consistency as other engineers
+                extended the library and reviewed additions to ensure components best applied React features to optimize performance.
+                Combined with other front-end optimizations, this reduced average load time by 50%.
+            </>,
+            <>
+                Developed large-scale back end software for processing user events from Slack integration.
+                Wrote back-end web-application software to process millions of AWS SQS events each month to quickly
+                respond to user input in Slack.
                 <Stack> (Node.js, MongoDB, AWS SQS, AWS Lambda)</Stack>
             </>,
             <>
-                Used the Slack API to provide data synchronization and native, user-friendly UX for one of the most used Slack applications.
+                Used the Slack API to provide data synchronization and a native, user-friendly UX for one of the most used Slack applications.
                 Refactored code to improve throughput and reduce customer wait time due to API rate limiting. Added integration with Heap API to
                 consistently track user actions in both Slack and the web-app.
             </>,
@@ -54,7 +60,6 @@ const jobs: Job[] = [
         jobTitle: "Software Engineer",
         bullets: [
             <>Developed and maintained case-management system web-app for processing refugee applications. <Stack>(Java, C#, T-SQL)</Stack></>,
-            <>Modified existing database stored procedures to align with code standards of maintainability.</>,
             <>Hardened security within the application to better protect data of applicants and employees.</>,
         ]
     },
