@@ -19,7 +19,7 @@ export function Skills(): JSX.Element {
             <SkillsList>
                 <p><Level>Experienced</Level>: React, TypeScript, Node.js, HTML, SCSS, MongoDB</p>
                 <p><Level>Working Knowledge</Level>: Python, SQL, Meteor, Mocha, Docker, Express, Amazon SQS, Amazon Labmda</p>
-                <p><Level>Previous Exposure</Level>: d3.js, AngularJS, Storybook, Webpack, Express</p>
+                <p><Level>Previous Exposure</Level>: D3.js, AngularJS, Storybook, Webpack, Express</p>
             </SkillsList>
         </div>
     );
