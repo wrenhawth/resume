@@ -22,13 +22,13 @@ export function PageHeader(props: PageHeaderProps): JSX.Element {
     return (
         <HeaderGrid>
             <ResumeTitle
-                fullName="Joshua Robusto"
+                fullName="Wren Hawthorne"
                 jobTitle="software engineer"
             />
             <ContactDetails
-                email="joshuarobusto@gmail.com"
+                email="wrenhawth@gmail.com"
                 phone="+14438676452"
-                github="https://github.com/jrobusto"
+                github="https://github.com/wrenhawth"
             />
         </HeaderGrid>
     );
