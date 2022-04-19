@@ -28,6 +28,7 @@ const jobs: Job[] = [
     {
         companyName: "Polly",
         startDate: moment().year(2017).month("August").toDate(),
+        endDate: moment().year(2019).month("August").toDate(),
         jobTitle: "Software Enginner",
         bullets: [
             <>
