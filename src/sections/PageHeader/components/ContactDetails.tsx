@@ -15,32 +15,38 @@ const DetailsList = styled.ul`
     list-style: none;
     padding-left: 0;
     margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 1em;
 `;
 
+const ListItem = styled.li`
+    margin-top: 0.5em;
+`
 export function ContactDetails(props: ContactDetailsProps): JSX.Element {
     return (
         <DetailsList>
-            <li>
+            <ListItem>
                 <Icon type="mail" />&nbsp;
                     <ContactLink
                     type={ContactType.EMAIL}
                     value={props.email}
                 />
-            </li>
-            <li>
+            </ListItem>
+            <ListItem>
                 <Icon type="call" />&nbsp;
                     <ContactLink
                     type={ContactType.PHONE}
                     value={props.phone}
                 />
-            </li>
-            <li>
+            </ListItem>
+            {/* <li>
                 <Icon type="logo-github" />&nbsp;
                     <ContactLink
                     type={ContactType.OTHER}
                     value={props.github}
                 />
-            </li>
+            </li> */}
         </DetailsList>
     );
 }

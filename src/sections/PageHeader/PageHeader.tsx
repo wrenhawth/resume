@@ -11,10 +11,11 @@ const HeaderGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: ${props => props.theme.primaryColor};
+    border-bottom: 2px dotted ${props => props.theme.primaryColor};
     color: ${props => props.theme.white};
     padding-top: 1em;
     padding-left: 1em;
-    -webkit-print-color-adjust: exact !important;
+    padding-bottom: 1em;
 `;
 
 export function PageHeader(props: PageHeaderProps): JSX.Element {

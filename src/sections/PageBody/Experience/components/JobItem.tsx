@@ -11,13 +11,13 @@ interface JobItemProps {
 }
 
 const JobGrid = styled.div`
- display: grid;
+    display: grid;
     grid-template-columns: 1fr 4fr;
 `
 
 const Accomplishments = styled.ul`
     margin-top: 0;
-    font-size: .8em;
+    font-size: .7em;
     list-style-type: square;
     list-style-position: inside;
     padding-left: 0.25em;

@@ -26,6 +26,30 @@ const Stack = styled(Mono)`
 
 const jobs: Job[] = [
     {
+        companyName: "98point6",
+        startDate: moment().year(2019).month("August").toDate(),
+        jobTitle: "Senior Software Enginner",
+        bullets: [
+            <>
+                
+                Developed the React/Redux-based Clinician Console app used by medical professionals to interact with, diagnose, and treat patients in a telehealth setting. Worked to shape the development of the app to leverage development best practices for performance, maintainability, reliability, and usability. 
+                <Stack>(Typescript, React, Redux, styled-components) </Stack>
+            </>, 
+            <>
+                Transitioned the type-checking system for three large web clients from Flow to Typescript. This change of type-checking systems significantly improved type safety, reduced build times by 50%, and increased developer ability to deliver features for the company's Clinician Console, Patient Web App, and Internal Commercial tools. A focus on mentoring and education, alongside automated tooling, empowered other developers to smoothly transition and more efficiently use the new language features. 
+                <Stack>(Typescript, Flow)</Stack>
+            </>,
+            // <>
+            //     Used a combination of automated tooling, developer education, and manual code updates to transition the company's web clients from Flow to Typescript. The change of type-checking systems significantly improved type safety, reduced build times by 50%, and increased developer velocity for the Clinician Console, Patient Web App, and Internal Commercial tools. This transition was carried out while these apps were in active development and a focus on mentoring and education empowered the other developers to smoothly transition and more efficiently use the new language features. 
+            //     <Stack>(Typescript, Flow)</Stack>
+            // </>,
+            <>
+                Created utilities to integrate the Clinician Console with a new GraphQL-based back-end, creating a bridge between the front-end console and the queries and mutations needed to retrieve and manipulate medical data. 
+                <Stack>(GraphQL, react-query, urql, graphql-codegen)</Stack>
+            </>,
+        ]
+    },
+    {
         companyName: "Polly",
         startDate: moment().year(2017).month("August").toDate(),
         endDate: moment().year(2019).month("August").toDate(),
@@ -33,25 +57,15 @@ const jobs: Job[] = [
         bullets: [
             <>
                 Developed front-end application in React for managing and analyzing the results of surveys.
-                Coordinated and maintained the component library, improving developer output, component performance,
-                and the consistency of the user experience. <Stack> (TypeScript, React, SCSS, MongoDB)</Stack>
-            </>,
-            <>
-                Wrote documentation on code standards for component design to maintain this consistency as other engineers
-                extended the library and reviewed additions to ensure components best applied React features to optimize performance.
-                Combined with other front-end optimizations, this reduced average load time by 50%.
+                Coordinated, maintained , and documented code standards for the component library, improving developer output, component performance,
+                and the consistency of the user experience. These component performance optimizations, ombined with other front-end optimizations, reduced average load time by 50%. <Stack> (TypeScript, React, SCSS, MongoDB)</Stack>
             </>,
             <>
                 Developed large-scale back end software for processing user events from Slack integration.
                 Wrote back-end web-application software to process millions of AWS SQS events each month to quickly
-                respond to user input in Slack.
+                respond to user input in Slack. Refactored code to improve throughput and reduce customer wait time due to API rate limiting.
                 <Stack> (Node.js, MongoDB, AWS SQS, AWS Lambda)</Stack>
-            </>,
-            <>
-                Used the Slack API to provide data synchronization and a native, user-friendly UX for one of the most used Slack applications.
-                Refactored code to improve throughput and reduce customer wait time due to API rate limiting. Added integration with Heap API to
-                consistently track user actions in both Slack and the web-app.
-            </>,
+            </>
         ]
     },
     {
@@ -60,8 +74,7 @@ const jobs: Job[] = [
         endDate: moment().year(2017).month("August").toDate(),
         jobTitle: "Software Engineer",
         bullets: [
-            <>Developed and maintained case-management system web-app for processing refugee applications. <Stack>(Java, C#, T-SQL)</Stack></>,
-            <>Hardened security within the application to better protect data of applicants and employees.</>,
+            <>Developed and maintained case-management system web-app for processing refugee applications. Hardened security within the application to better protect data of applicants and employees.<Stack>(Java, C#, T-SQL)</Stack></>,
         ]
     },
     {
@@ -72,8 +85,7 @@ const jobs: Job[] = [
         bullets: [
             <>Created Angular.js webapp that pulled data from a RESTful JSON service and presented the results in a user-friendly
             and customizable format, resulting in a strong and competitive proposal for the company. <Stack>(Node.js, ES5, AngularJS)</Stack></>,
-            <>Modified machine learning workflows to properly use Apache Spark features for more reliable and efficient distributed processing, increasing performance. <Stack>(Python, Spark)</Stack></>,
-            <>Added an option to the machine learning job, both in the back-end and the frontend Angular web-app for launching and viewing the results of jobs. <Stack>(Python, Django, AngularJS)</Stack></>
+            <>Modified machine learning workflows to properly use Apache Spark features for more reliable and efficient distributed processing, increasing performance. Increased configurability of the workflows through modifying the front-end used for launching and viewing the results of jobs. <Stack>(Python, Spark, Django, AngularJS)</Stack></>,
         ]
     }
 ];
