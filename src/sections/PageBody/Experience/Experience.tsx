@@ -22,6 +22,7 @@ const Stack = styled(Mono)`
     font-style: italic;
     color: ${props => props.theme.secondaryColor};
     white-space: nowrap;
+    margin-left: 0.5em;
 `;
 
 const jobs: Job[] = [

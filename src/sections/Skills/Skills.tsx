@@ -22,8 +22,8 @@ export function Skills(): JSX.Element {
         <div>
             <SectionName><Icon type="construct"/> Skills</SectionName>
             <SkillsList>
-                <SkillsItem><Level>Experienced</Level>: React, TypeScript, Node.js, HTML, SCSS, MongoDB</SkillsItem>
-                <SkillsItem><Level>Working Knowledge</Level>: Python, SQL, Meteor, Mocha, Docker, Amazon SQS, Amazon Labmda</SkillsItem>
+                <SkillsItem><Level>Experienced</Level>: React, Redux, TypeScript, Node.js, HTML, Styled-Components</SkillsItem>
+                <SkillsItem><Level>Working Knowledge</Level>:GraphQL, Docker, Amazon SQS, Amazon Labmda</SkillsItem>
                 <SkillsItem><Level>Previous Exposure</Level>: D3.js, AngularJS, Storybook, Webpack, Express</SkillsItem>
             </SkillsList>
         </div>

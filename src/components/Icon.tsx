@@ -8,7 +8,7 @@ interface IconProps {
 }
 
 const IconSpan = styled.span`
-    vertical-align: middle;
+    /* vertical-align: middle; */
 `
 
 export function Icon(props: IconProps): JSX.Element {
