@@ -27,14 +27,14 @@ export function ContactDetails(props: ContactDetailsProps): JSX.Element {
     return (
         <DetailsList>
             <ListItem>
-                <Icon type="mail" />&nbsp;
+                <Icon type="mail" />
                     <ContactLink
                     type={ContactType.EMAIL}
                     value={props.email}
                 />
             </ListItem>
             <ListItem>
-                <Icon type="call" />&nbsp;
+                <Icon type="call" />
                     <ContactLink
                     type={ContactType.PHONE}
                     value={props.phone}

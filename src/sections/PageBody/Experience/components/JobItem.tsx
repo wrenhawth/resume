@@ -17,7 +17,7 @@ const JobGrid = styled.div`
 
 const Accomplishments = styled.ul`
     margin-top: 0;
-    font-size: .7em;
+    font-size: .9em;
     list-style-type: square;
     list-style-position: inside;
     padding-left: 0.25em;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { styled } from "../utils/theme";
 
-type IconType = "mail" | "call" | "logo-github" | "construct" | "briefcase" | "school";
+type IconType = "mail" | "call" | "logo-github" | "construct" | "briefcase" | "school" | "star";
 
 interface IconProps {
     type: IconType;
@@ -9,6 +9,7 @@ interface IconProps {
 
 const IconSpan = styled.span`
     /* vertical-align: middle; */
+    padding-right: .25em;
 `
 
 export function Icon(props: IconProps): JSX.Element {

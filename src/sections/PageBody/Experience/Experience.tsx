@@ -37,7 +37,7 @@ const jobs: Job[] = [
                 <Stack>(Typescript, React, Redux, styled-components) </Stack>
             </>, 
             <>
-                Transitioned the type-checking system for three large web clients from Flow to Typescript. This change of type-checking systems significantly improved type safety, reduced build times by 50%, and increased developer ability to deliver features for the company's Clinician Console, Patient Web App, and Internal Commercial tools. A focus on mentoring and education, alongside automated tooling, empowered other developers to smoothly transition and more efficiently use the new language features. 
+                Transitioned the type-checking system for three large web clients from Flow to Typescript. This change of type-checking systems significantly improved type safety, reduced build times by 50%, and increased developer ability to deliver features for the company's web applications. A focus on mentoring and education, alongside automated tooling, empowered other developers to smoothly transition and more efficiently use the new language features. 
                 <Stack>(Typescript, Flow)</Stack>
             </>,
             // <>
@@ -58,8 +58,8 @@ const jobs: Job[] = [
         bullets: [
             <>
                 Developed front-end application in React for managing and analyzing the results of surveys.
-                Coordinated, maintained , and documented code standards for the component library, improving developer output, component performance,
-                and the consistency of the user experience. These component performance optimizations, ombined with other front-end optimizations, reduced average load time by 50%. <Stack> (TypeScript, React, SCSS, MongoDB)</Stack>
+                Coordinated, maintained, and documented code standards for the component library, improving developer output, component performance,
+                and the consistency of the user experience. These component performance optimizations, combined with other front-end optimizations, reduced average load time by 50%. <Stack> (TypeScript, React, SCSS, MongoDB)</Stack>
             </>,
             <>
                 Developed large-scale back end software for processing user events from Slack integration.
@@ -97,7 +97,7 @@ export function Experience(props: ExperienceProps): JSX.Element {
     );
     return (
         <div>
-            <SectionName><Icon type="briefcase" /> Experience</SectionName>
+            <SectionName><Icon type="briefcase" />Experience</SectionName>
             {jobList}
         </div>
     );

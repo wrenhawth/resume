@@ -24,7 +24,7 @@ export function PageHeader(props: PageHeaderProps): JSX.Element {
         <HeaderGrid>
             <ResumeTitle
                 fullName="Wren Hawthorne"
-                jobTitle="software engineer"
+                jobTitle="Senior Software Engineer"
             />
             <ContactDetails
                 email="wrenhawth@gmail.com"
