@@ -5,7 +5,7 @@ import { SectionName } from "../../../components/SectionName";
 import { JobItem } from "./components/JobItem";
 import { Mono } from "../../../components/Mono";
 import { styled } from "../../../utils/theme";
-import { Icon } from "../../../components/Icon";
+import { HeaderIcon } from "../../../components/HeaderIcon";
 
 interface ExperienceProps {
 }
@@ -26,6 +26,24 @@ const Stack = styled(Mono)`
 `;
 
 const jobs: Job[] = [
+    {
+        companyName: "GoGuardian",
+        startDate: moment().year(2022).month("July").toDate(),
+        jobTitle: "Senior Software Engineer",
+        bullets: [
+            <>
+                Lead a team of Front-End engineers in developing features and improving the accessibility of GoGuardian Admin, an application for K-12 schools to manage their web filtering and student safety. 
+                <Stack>(Typescript, React, Redux, styled-components)</Stack>
+            </>,
+            <>
+                Developed a Proof of Concept interface for an LLM in Streamlit that allowed employees to more efficiently categorize sites that were previously uncategorized by the web categorization data pipelines, reducing the rate of uncategorized student browsing by a factor of 5.
+                <Stack>(Python, StreamLit)</Stack>
+            </>,
+            <>
+                Mentored junior engineers on coding best practices, pitfalls, and developing apps with a focus on extensibility, reliability, and efficiency.
+            </>
+        ]
+    },
     {
         companyName: "98point6",
         startDate: moment().year(2019).month("August").toDate(),
@@ -70,20 +88,12 @@ const jobs: Job[] = [
         ]
     },
     {
-        companyName: "CSRA",
-        startDate: moment().year(2017).month("January").toDate(),
+        companyName: "CSRA / 42Six Solutions",
+        startDate: moment().year(2014).month("October").toDate(),
         endDate: moment().year(2017).month("August").toDate(),
         jobTitle: "Software Engineer",
         bullets: [
             <>Developed and maintained case-management system web-app for processing refugee applications. Hardened security within the application to better protect data of applicants and employees.<Stack>(Java, C#, T-SQL)</Stack></>,
-        ]
-    },
-    {
-        companyName: "42Six Solutions",
-        startDate: moment().year(2014).month("October").toDate(),
-        endDate: moment().year(2017).month("January").toDate(),
-        jobTitle: "Software Engineer",
-        bullets: [
             <>Created Angular.js webapp that pulled data from a RESTful JSON service and presented the results in a user-friendly
             and customizable format, resulting in a strong and competitive proposal for the company. <Stack>(Node.js, ES5, AngularJS)</Stack></>,
             <>Modified machine learning workflows to properly use Apache Spark features for more reliable and efficient distributed processing, increasing performance. Increased configurability of the workflows through modifying the front-end used for launching and viewing the results of jobs. <Stack>(Python, Spark, Django, AngularJS)</Stack></>,
@@ -97,7 +107,7 @@ export function Experience(props: ExperienceProps): JSX.Element {
     );
     return (
         <div>
-            <SectionName><Icon type="briefcase" />Experience</SectionName>
+            <HeaderIcon type="briefcase" /><SectionName>Experience</SectionName>
             {jobList}
         </div>
     );

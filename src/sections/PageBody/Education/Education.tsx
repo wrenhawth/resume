@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { SectionName } from "../../../components/SectionName";
-import { Icon } from "../../../components/Icon";
+import { HeaderIcon } from "../../../components/HeaderIcon";
 import { styled } from "../../../utils/theme";
 import { SidebarHeader } from "../../../components/SidebarHeader";
 import { DateRange } from "../../../components/DateRange";
@@ -33,8 +33,8 @@ const EducationDescription = styled.p`
 export function Education(props: EducationProps): JSX.Element {
 
     return (
-        <div>
-            <SectionName id="Education" className="Education"><Icon type="school" />Education</SectionName>
+        <div><HeaderIcon type="school" />
+            <SectionName id="Education" className="Education">Education</SectionName>
             <SchoolGrid>
                 <div>
                     <SidebarHeader>Georgia Tech <DateRange>2017 - 2018</DateRange></SidebarHeader>
