@@ -32,11 +32,11 @@ const jobs: Job[] = [
         jobTitle: "Senior Software Engineer",
         bullets: [
             <>
-                Lead a team of Front-End engineers in developing features and improving the accessibility of GoGuardian Admin, an application for K-12 schools to manage their web filtering and student safety. 
+                Lead a team of Front-End engineers in developing features and improving the accessibility of GoGuardian Admin, an application for K-12 schools to manage their student's web filtering and safety.
                 <Stack>(Typescript, React, Redux, styled-components)</Stack>
             </>,
             <>
-                Developed a Proof of Concept interface for an LLM in Streamlit that allowed employees to more efficiently categorize sites that were previously uncategorized by the web categorization data pipelines, reducing the rate of uncategorized student browsing by a factor of 5.
+                Developed an interface for an LLM in Streamlit that allowed stakeholders to more efficiently categorize web sites that were previously uncategorized by the web categorization data pipelines, reducing the rate of uncategorized student browsing by a factor of 5.
                 <Stack>(Python, StreamLit)</Stack>
             </>,
             <>
@@ -47,6 +47,7 @@ const jobs: Job[] = [
     {
         companyName: "98point6",
         startDate: moment().year(2019).month("August").toDate(),
+        endDate: moment().year(2022).month("July").toDate(),
         jobTitle: "Senior Software Enginner",
         bullets: [
             <>
